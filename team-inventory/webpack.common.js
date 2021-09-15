@@ -17,7 +17,7 @@ module.exports = ({
   const config = {
     entry,
     output: {
-      filename: 'dist/bundle.js',
+      filename: 'bundle.js',
       publicPath: mode === 'development' ? 'http://localhost:4203/' : addSlashToUrl(process.env.PUBLIC_URL),
       uniqueName: 'team-inventory'
     },
