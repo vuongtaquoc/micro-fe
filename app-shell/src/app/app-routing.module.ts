@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { matcher: startsWith('hr'), component: WrapperComponent, data: { importName: 'hr', elementName: 'hr-element' }},
   { matcher: startsWith('produce'), component: WrapperComponent, data: { importName: 'produce', elementName: 'produce-element' }},
+  { matcher: startsWith('inventory'), component: WrapperComponent, data: { importName: 'inventory', elementName: 'inventory-element' }},
 ];
 
 @NgModule({
