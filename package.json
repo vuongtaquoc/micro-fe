@@ -19,5 +19,8 @@
   "homepage": "https://github.com/vuongtaquoc/micro-fe#readme",
   "devDependencies": {
     "lerna": "4.0.0"
+  },
+  "dependencies": {
+    "run.env": "1.1.0"
   }
 }

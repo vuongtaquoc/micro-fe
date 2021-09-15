@@ -1676,6 +1676,11 @@ dns-txt@^2.0.2:
   dependencies:
     buffer-indexof "^1.0.0"
 
+dotenv@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-2.0.0.tgz#bd759c357aaa70365e01c96b7b0bec08a6e0d949"
+  integrity sha1-vXWcNXqqcDZeAclrewvsCKbg2Uk=
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
@@ -3033,6 +3038,13 @@ run-parallel@^1.1.9:
   integrity sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==
   dependencies:
     queue-microtask "^1.2.2"
+
+run.env@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/run.env/-/run.env-1.1.0.tgz#a33450a9cbf2bc28a67463e51cc64436eda57441"
+  integrity sha512-KWs8/mIvCs+LPfoQXp4zPo0gZiQCUNKyV33tN7m6r5jL2ZzT11/A2Y1UACsiSMAB53i7jp26uDN2+AeZuZ7+vw==
+  dependencies:
+    dotenv "^2.0.0"
 
 safe-buffer@5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"

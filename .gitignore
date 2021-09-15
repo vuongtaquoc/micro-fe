@@ -46,3 +46,5 @@ testem.log
 Thumbs.db
 /internals/simulator/node_modules
 /package-lock.json
+
+.env

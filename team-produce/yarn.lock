@@ -3015,6 +3015,11 @@ domutils@^2.6.0:
     domelementtype "^2.2.0"
     domhandler "^4.2.0"
 
+dotenv@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-2.0.0.tgz#bd759c357aaa70365e01c96b7b0bec08a6e0d949"
+  integrity sha1-vXWcNXqqcDZeAclrewvsCKbg2Uk=
+
 ecc-jsbn@~0.1.1:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/ecc-jsbn/-/ecc-jsbn-0.1.2.tgz#3a83a904e54353287874c564b7549386849a98c9"
@@ -6605,6 +6610,13 @@ run-parallel@^1.1.9:
   integrity sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==
   dependencies:
     queue-microtask "^1.2.2"
+
+run.env@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/run.env/-/run.env-1.1.0.tgz#a33450a9cbf2bc28a67463e51cc64436eda57441"
+  integrity sha512-KWs8/mIvCs+LPfoQXp4zPo0gZiQCUNKyV33tN7m6r5jL2ZzT11/A2Y1UACsiSMAB53i7jp26uDN2+AeZuZ7+vw==
+  dependencies:
+    dotenv "^2.0.0"
 
 rxjs@6.6.7, rxjs@~6.6.0, rxjs@~6.6.3:
   version "6.6.7"
