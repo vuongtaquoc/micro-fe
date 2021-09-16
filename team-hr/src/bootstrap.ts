@@ -8,7 +8,6 @@ if (!(window as any).shell && environment.production) {
   try {
     enableProdMode();
   } catch (e) {
-    console.log(e);
   }
 }
 
