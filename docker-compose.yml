@@ -1,0 +1,15 @@
+version: '3'
+  nginx:
+    image: nginx:latest
+    container_name: production_nginx
+    volumes:
+      - ./internals/nginx:/etc/nginx/conf.d
+      - ./app-shell/dist/app-shell:/usr/data/app-shell
+      - ./team-hr/dist/team-hr:/usr/data/team-hr
+      - ./team-produce/dist/team-produce:/usr/data/team-produce
+      - ./team-inventory/dist:/usr/data/team-inventory
+    ports:
+      - 3000:3000
+      - 3001:3001
+      - 3002:3002
+      - 3003-3003
