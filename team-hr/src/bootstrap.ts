@@ -5,7 +5,11 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 if (!(window as any).shell && environment.production) {
-  enableProdMode();
+  try {
+    enableProdMode();
+  } catch (e) {
+    console.log(e);
+  }
 }
 
 declare const require: any;
