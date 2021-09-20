@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 const path = require('path');
 
@@ -49,9 +50,13 @@ module.exports = ({
         library: { type: 'var', name: 'inventory' },
         filename: 'remoteEntry.js',
         exposes: {
-          './web-components': path.resolve(__dirname, 'src/app.js'),
+          './web-components': path.resolve(__dirname, 'src/bootstrap.js'),
         },
         shared: ['react', 'react-dom'],
+      }),
+      new HtmlWebpackPlugin({
+        template:
+          './public/index.html',
       }),
       ...plugins,
     ],
