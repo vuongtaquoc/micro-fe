@@ -27,6 +27,16 @@ const routes: Routes = [
       elementName: 'produce-element',
     } as WebComponentWrapperOptions
   },
+  {
+    matcher: startsWith('inventory'),
+    component: WebComponentWrapper,
+    data: {
+      remoteEntry: 'http://localhost:4203/remoteEntry.js',
+      remoteName: 'inventory',
+      exposedModule: './web-components',
+      elementName: 'inventory-element'
+    } as WebComponentWrapperOptions
+  },
 ];
 
 @NgModule({
