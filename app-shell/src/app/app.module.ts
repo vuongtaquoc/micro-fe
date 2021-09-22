@@ -1,18 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ModuleFederationToolsModule } from '@angular-architects/module-federation-tools';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { WrapperComponent } from './wrapper/wrapper.component';
 
 @NgModule({
   declarations: [
-    WrapperComponent,
     AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    FormsModule,
+    AppRoutingModule,
+    ModuleFederationToolsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

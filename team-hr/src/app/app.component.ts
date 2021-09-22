@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { connectRouter } from '@angular-architects/module-federation-tools';
 
 @Component({
   selector: 'app-root',
@@ -12,10 +13,6 @@ export class AppComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit() {
-    this.router.navigateByUrl(location.pathname.substr(1));
-
-    window.addEventListener('popstate', () => {
-      this.router.navigateByUrl(location.pathname.substr(1));
-    });
+    connectRouter(this.router);
   }
 }

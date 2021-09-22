@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { endsWith } from './router.utils';
+import { endsWith } from '@angular-architects/module-federation-tools';
 
 import { EmployeesComponent } from './employees/employees.component';
 import { MembersBirthdayComponent } from './members-birthday/members-birthday.component';

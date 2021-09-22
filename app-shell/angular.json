@@ -23,6 +23,7 @@
         "build": {
           "builder": "ngx-build-plus:browser",
           "options": {
+						"commonChunk": false,
             "outputPath": "dist/app-shell",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -60,6 +61,12 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
+							"optimization": true,
+							"sourceMap": false,
+							"namedChunks": true,
+							"extractLicenses": true,
+							"vendorChunk": false,
+							"buildOptimizer": true,
               "outputHashing": "all",
               "extraWebpackConfig": "webpack.prod.config.js"
             },

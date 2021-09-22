@@ -1,16 +1,32 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { loadRemoteModule } from '@angular-architects/module-federation';
+import { startsWith, WebComponentWrapper, WebComponentWrapperOptions } from '@angular-architects/module-federation-tools';
 
-import { startsWith } from './router.utils';
-
-import { WrapperComponent } from './wrapper/wrapper.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
-  { matcher: startsWith('hr'), component: WrapperComponent, data: { importName: 'hr', elementName: 'hr-element' }},
-  { matcher: startsWith('produce'), component: WrapperComponent, data: { importName: 'produce', elementName: 'produce-element' }},
-  { matcher: startsWith('inventory'), component: WrapperComponent, data: { importName: 'inventory', elementName: 'inventory-element' }},
+  {
+    matcher: startsWith('hr'),
+    component: WebComponentWrapper,
+    data: {
+      remoteEntry: 'http://localhost:4201/remoteEntry.js',
+      remoteName: 'hr',
+      exposedModule: './web-components',
+      elementName: 'hr-element',
+    } as WebComponentWrapperOptions
+  },
+  {
+    matcher: startsWith('produce'),
+    component: WebComponentWrapper,
+    data: {
+      remoteEntry: 'http://localhost:4202/remoteEntry.js',
+      remoteName: 'produce',
+      exposedModule: './web-components',
+      elementName: 'produce-element',
+    } as WebComponentWrapperOptions
+  },
 ];
 
 @NgModule({

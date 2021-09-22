@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { endsWith } from './router.utils';
+import { endsWith } from '@angular-architects/module-federation-tools';
 
 import { MonitoringComponent } from './monitoring/monitoring.component';
 import { TimesheetsComponent } from './timesheets/timesheets.component';

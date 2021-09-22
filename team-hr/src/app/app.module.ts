@@ -15,7 +15,7 @@ import { MembersBirthdayComponent } from './members-birthday/members-birthday.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: []
